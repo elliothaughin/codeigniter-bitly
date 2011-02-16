@@ -27,7 +27,7 @@
 			{
 				$response = $this->connection->get($this->append_token($this->_api_url.$uri), $data);
 			}
-			catch (facebookException $e)
+			catch (bitlyException $e)
 			{
 				$this->_errors[] = $e;
 
